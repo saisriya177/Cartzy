@@ -27,6 +27,15 @@ export default function ResponsiveMenu({openNav,setOpenNav}){
                 </nav>
             </div>
 
+            <div className="hidden md:block">
+            <SignedOut>
+              <SignInButton className="bg-red-500 text-white px-3 py-1 rounded-md" />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </div>
+
         </div>
     )
 }
